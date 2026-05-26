@@ -17,7 +17,7 @@ Restart the server once so Rocket creates the config.
 ## Commands
 
 ```text
-/setcrate <name>
+/setcrate <name> <1-5>
 /deletecrate <name>
 /startcrate
 ```
@@ -25,8 +25,10 @@ Restart the server once so Rocket creates the config.
 Stand where you want a crate to spawn, then run:
 
 ```text
-/setcrate Military Base
+/setcrate Military Base 3
 ```
+
+The final number sets the crate tier for that spawn. For example, `3` saves it as Tier III.
 
 Permission:
 
