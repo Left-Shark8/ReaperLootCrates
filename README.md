@@ -18,6 +18,8 @@ Restart the server once so Rocket creates the config.
 
 ```text
 /setcrate <name>
+/deletecrate <name>
+/startcrate
 ```
 
 Stand where you want a crate to spawn, then run:
@@ -30,6 +32,8 @@ Permission:
 
 ```text
 reaperlootcrates.setcrate
+reaperlootcrates.deletecrate
+reaperlootcrates.startcrate
 ```
 
 ## Config
