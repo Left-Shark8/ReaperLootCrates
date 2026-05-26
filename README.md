@@ -28,7 +28,7 @@ Stand where you want a crate to spawn, then run:
 /setcrate Military Base 3
 ```
 
-The final number sets the crate tier for that spawn. For example, `3` saves it as Tier III.
+The final number sets the crate tier for that spawn. For example, `3` saves it as Tier 3.
 
 Permission:
 
@@ -52,7 +52,7 @@ Main settings:
 
 `CrateBarricadeId` should be a storage barricade item ID.
 
-Loot tiers are configurable in the generated config. Tiers I-V support:
+Loot tiers are configurable in the generated config. Tiers 1-5 support:
 
 ```text
 Name
