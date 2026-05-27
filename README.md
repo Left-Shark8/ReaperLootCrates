@@ -48,7 +48,11 @@ Main settings:
 <SpawnChancePercent>50</SpawnChancePercent>
 <SpawnOnLoad>false</SpawnOnLoad>
 <AnnouncementFormat>A Tier {tier} Loot Crate has Spawned at {location}</AnnouncementFormat>
+<CountdownAnnouncementsEnabled>true</CountdownAnnouncementsEnabled>
+<CountdownAnnouncementFormat>Loot Crate spawning in {minutes} minutes</CountdownAnnouncementFormat>
 ```
+
+Default countdown warning minutes are `10`, `5`, and `1`.
 
 `CrateBarricadeId` should be a storage barricade item ID.
 
