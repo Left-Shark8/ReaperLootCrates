@@ -45,7 +45,7 @@ Main settings:
 ```xml
 <CrateBarricadeId>1374</CrateBarricadeId>
 <SpawnIntervalSeconds>3600</SpawnIntervalSeconds>
-<SpawnChancePercent>50</SpawnChancePercent>
+<SpawnChancePercent>100</SpawnChancePercent>
 <SpawnOnLoad>false</SpawnOnLoad>
 <AnnouncementFormat>A Tier {tier} Loot Crate has Spawned at {location}</AnnouncementFormat>
 <CountdownAnnouncementsEnabled>true</CountdownAnnouncementsEnabled>
@@ -55,6 +55,8 @@ Main settings:
 Default countdown warning minutes are `10`, `5`, and `1`.
 
 `CrateBarricadeId` should be a storage barricade item ID.
+
+`SpawnChancePercent` controls whether the interval actually creates a crate after the countdown. Use `100` if every timer should spawn one.
 
 Loot tiers are configurable in the generated config. Tiers 1-5 support:
 
@@ -67,3 +69,11 @@ Items
 ```
 
 Higher `Weight` means that tier is more likely to spawn.
+
+## Troubleshooting
+
+If the countdown appears but no crate spawns:
+
+- Set `SpawnChancePercent` to `100`.
+- Make sure `CrateBarricadeId` is a valid storage barricade item ID on the server.
+- Use `/startcrate`; if spawning fails, the plugin logs the exact reason in console.
